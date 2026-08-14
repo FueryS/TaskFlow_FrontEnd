@@ -1,0 +1,123 @@
+/**
+ * @file BrickBreakerGame.css
+ * @description Styling for the standalone BrickBreaker mini-game widget.
+ */
+
+.brick-breaker-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #090d16;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  user-select: none;
+  touch-action: none;
+}
+
+.brick-breaker-hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background-color: #0f172a;
+  border-bottom: 1px solid #1e293b;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+  letter-spacing: 0.02em;
+}
+
+.hud-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hud-value {
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.brick-breaker-canvas-wrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background-color: #090d16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brick-breaker-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.brick-breaker-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(9, 13, 22, 0.88);
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  text-align: center;
+  z-index: 10;
+}
+
+.overlay-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.overlay-title.win {
+  color: #10b981;
+}
+
+.overlay-title.gameover {
+  color: #ef4444;
+}
+
+.overlay-subtitle {
+  font-size: 0.8125rem;
+  color: #94a3b8;
+  max-width: 320px;
+  line-height: 1.4;
+}
+
+.brick-breaker-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+.brick-breaker-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.brick-breaker-footer {
+  padding: 6px 12px;
+  background-color: #0f172a;
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #64748b;
+}
