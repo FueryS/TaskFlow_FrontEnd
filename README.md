@@ -13,7 +13,7 @@ A clean, responsive, and accessible Kanban task board interface built with **Rea
 ### Installation & Launch
 ```bash
 # 1. Navigate to the frontend directory
-cd FrontEnd
+cd TaskFlow_FrontEnd
 
 # 2. Install dependencies
 npm install
@@ -32,8 +32,8 @@ Open your browser at `http://localhost:5173`.
 ## 2. Features & Interactions
 
 1. **Kanban Board Visualization:** Real-time view of columns ("To Do", "In Progress", "Done") with live task counts on headers.
-2. **Task Creation & Editing:** Create tasks with mandatory non-empty title validation and optional descriptions and priority selectors (`Low`, `Medium`, `High`).
-3. **Task Deletion:** Instant task removal with optimistic UI updates.
+2. **Task Creation & Editing:** Create tasks with mandatory non-empty title validation, character limits with live counters, and optional descriptions and priority selectors (`Low`, `Medium`, `High`).
+3. **Task Deletion:** Instant task removal with animated transitions and optimistic UI updates.
 4. **Task Movement (Dual Support):**
    - **Native HTML5 Drag & Drop:** Fluid drag interactions across columns with visual drop target cues.
    - **Accessible Fallback Dropdown:** Per-card column selector for keyboard navigation and screen readers.
@@ -42,8 +42,8 @@ Open your browser at `http://localhost:5173`.
    - One-click filter pills for `All`, `High`, `Medium`, and `Low` priority tasks.
 6. **Free-Tier Cold-Start & Keep-Alive Support:**
    - Built-in background heartbeat polling keeps free-tier backends (such as Render) active while the tab is open.
-   - Displays a dedicated recovery modal (*"Connection lost. Please wait while the server spins up..."*) if the server is cold-starting, with a container slot ready for the interactive mini-game.
-7. **Zero Emojis & Clean SaaS Aesthetics:** Crafted with a neutral slate/zinc palette inspired by Linear and Notion, utilizing open SVG icons (`lucide-react`).
+   - Displays a dedicated recovery modal with an integrated responsive breakout mini-game while the server spins up.
+7. **Design System:** Clean, spacious, and modern interface inspired by Linear and Notion, utilizing crisp vector icons (`lucide-react`) and fluid widescreen column scaling.
 
 ---
 
